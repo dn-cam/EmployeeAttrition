@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="cognito">
+<script src="https://www.cognitoforms.com/s/ViE6Hf9MzUCfm5EjhcuZjg"></script>
+<script>Cognito.load("forms", { id: "3" });</script>
+</div>
+    
+<p>Enter some text in the fields below, then press the "Submit form" button to submit the form.</p>
+
+    
+<form id="myForm" action="http://0.0.0.0:5000/predict" method="POST">
+  First name: <input type="text" name="fname">
+  Last name: <input type="text" name="lname"><br>
+  Age: <input type="text" name="lname">
+  Work Satisfaction: <input type="text" name="lname"> <br> 
+  <input type="button" onclick="myFunction()" value="Submit form">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("myForm").submit();
+}
+</script>
+
+</body>
+</html>
